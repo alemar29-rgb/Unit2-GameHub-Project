@@ -577,14 +577,49 @@ ACCESSIBILITY EXPLANATION:
     .hero {
         background: linear-gradient(135deg, rgb(27, 202, 62)) 0%, #1896c7 100%;
     }
-      .main-nav {
+    .main-nav {
         display: none;
     }
     .hamburger {
         display: block;
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        padding: 5px 10px;
+        
+    }
+    .hamburger:focus {
+        outline: 2px solid rgb(39, 39, 208);
+        outline-offset: 2px;
+
+    }
+    .moblie-nav {
+        /* display:none */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: navy;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgb(39, 40, 88, 00.01);
+    z-index: 1000 ;
+
+    }
+
+    .moblie-nav a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px dolid rgba(255, 255, 255, 00.01);
+        transition: color 0.3 ease;
+
     }
     .hamburger:focus + .moblie-nav {
         display: flex;
     }
    }
-  
+  .moblie-nav a:hover {
+    
+  }
